@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>js之Array</title>
+ </head>
+ <body>
+  	<!--	Array的方法
+		生成新的数组，但是不影响原数组。
+		concat(array1);数组拼接，长度等于原来2个数组的长度的和
+		join("-");用-把数组中的元素分隔，生成String
+		pop();删除最后一个元素，并返回该元素，影响了原数组的长度。
+		push(var);让数组最后添加一个元素，并返回新数组的长度
+		push(array);往数组最后添加一个数组B，并返回新数组的长度，其中新数组的长度= 原素组长度+1(数组B作为一个元素，而不是把数组B的元素加入新数组)
+		reverse();颠倒数组中元素的顺序,并返回新数组
+	-->
+
+  <script>
+	document.write("<br/>");
+	document.write("<hr/>");
+
+	var arr1 = ["小布什","奥巴马","川普"];
+	var arr2 = ["普京","斯大林"];
+	var arr3 = arr1.concat(arr2);
+	document.write(arr3);
+	document.write("<hr/>");
+
+	document.write(arr1.join("="));
+	document.write("<br/>");
+	document.write(arr1);
+	document.write("<hr/>");
+
+	//pop()
+	document.write(arr1.pop());
+	document.write("<br/>");
+	document.write(arr1);
+	document.write("<hr/>");
+	
+
+	var arr4 = ["毛泽东","周恩来","朱德"];
+	document.write(arr4.push("李大钊"));
+	document.write("<hr/>");
+
+	var arr5 = ["叶剑英","陈云"];
+	var arr6 = ["邓小平","万里"];
+	document.write(arr5.push(arr6));
+	document.write("<br/>");
+	document.write(arr5);
+	document.write("<hr/>");
+
+	var arr7 = ["毛泽东","周恩来","朱德"];
+	document.write(arr7.reverse());
+	document.write("<br/>");
+	document.write(arr7);
+	</script>
+ </body>
+</html>

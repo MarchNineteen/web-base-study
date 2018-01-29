@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery的属性与样式之.attr()与.removeAttr()</title>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<style>
+
+	</style>
+	<script>
+		$(document).ready(function() {
+			$("#add").click(function() {
+			$("div").attr("attr","attr");
+		});
+
+		$("#remove").click(function(){
+			$("div").removeAttr('attr');
+		});
+		});
+	</script>
+</head>
+<body>
+	<div>测试Test</div>
+	<button id="add">添加属性</button>
+	<button id="remove">删除属性</button>
+</body>
+</html>

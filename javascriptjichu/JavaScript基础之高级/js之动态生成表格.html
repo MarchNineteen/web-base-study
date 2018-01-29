@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>js之动态生成表格</title>
+ </head>
+ <body>
+  行：<input type="text" id="tr"/>列：<input type="text" id="td"/>
+  <br/>
+  <input type="button" value="动态生成表格" onclick="generate();">
+ </body>
+ <div id="div"/>
+
+ <script type="text/javascript">
+   
+   //注意：<div></div>,标签的/放在前面，不是<div/>,下面放在<div/>会导致列之间有空格
+	function generate(){
+		var tr=document.getElementById("tr").value;
+		var td=document.getElementById("td").value;
+		var table="<table border='1'>";
+		for(var i=0;i<tr;i++ ){
+			table=table+"<tr>";
+			for(var j=0;j<td;j++){
+				//table=table+"<td>"+"a"+"<td/>";
+				table=table+"<td>a</td>";
+			}
+			table=table+"</tr>";
+		}
+		table=table+"</table>";
+
+		var div = document.getElementById("div");
+		div.innerHTML=table;
+	}
+ </script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery鼠标事件之hover事件</title>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("div").hover(function() {
+				$(this).css("background","blue");
+			}, function() {
+				$(this).css("background","green");
+			});
+		});
+	</script>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		div {
+			width: 100px;
+			padding: 50px;
+			background: red;
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

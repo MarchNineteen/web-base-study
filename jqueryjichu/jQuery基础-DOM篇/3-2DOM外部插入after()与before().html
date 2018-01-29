@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM外部插入after()与before()</title>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#before").before("<p>before</p>");
+			$("#after").after("<p>after</p>");
+		});
+	</script>
+</head>
+<body>
+	<div>
+		<p id="before">测试before</p>
+	</div>
+	<div>
+		<p id="after">测试after</p>
+	</div>
+</body>
+</html>

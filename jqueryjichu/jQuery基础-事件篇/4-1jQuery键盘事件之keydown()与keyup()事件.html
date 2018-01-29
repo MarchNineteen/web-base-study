@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery键盘事件之keydown()与keyup()事件</title>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#down").keydown(function() {
+				alert("keydown");
+			});
+
+			$("#up").keyup(function() {
+				alert("up");
+			});
+		});
+	</script>
+</head>
+<body>
+	<label for="">keydown:</label>
+	<input type="text" name="" id="down">
+	<label for="">keyup</label>
+	<input type="text" name="" id="up">
+</body>
+</html>

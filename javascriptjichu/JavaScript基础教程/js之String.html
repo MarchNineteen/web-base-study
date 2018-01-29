@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>JavaScript String </title>
+ </head>
+ <body>
+<!--
+	string的属性和方法
+		属性：
+			length
+		方法：
+			bold();
+			fontcolor("red");//字体颜色
+			fontsize(10);//字体大小
+			link("baidu.html");//点击打开超链接
+			sub();//把当前的值放在下角标
+			sup();//把当前的值放在上角标
+
+			chartAt(5) 返回字符串中角标为5的元素
+			"a".concat("bc"); 合并字符串
+			indexOf("h"); 返回字符串在该字符串中第一次出现的角标
+			split("-")切割字符串成数组
+			substr(3,5); 截取字符串。 第一个参数：开始截取的位置角标，第二个参数：截取的数量。
+			substring(3,5);截取字符串。第一个参数：开始截取的位置的角标，第二个参数：结束截取位置的角标。[3,5)留左不留右
+
+	其它：
+		1 type="text/javascript"
+		2 alert(str.bold());
+		3 <hr/>横线;<br/>换行
+-->	
+	<script type="text/javascript">
+
+		var str1 = "abcde";
+		document.write(str1.length);
+		document.write("<hr/>");
+		
+		document.write(str1.fontcolor("blue"));
+		document.write("<br/>");
+
+		document.write(str1.fontsize(20));
+		document.write("<hr/>");
+
+		var str2 = "百度";
+		document.write(str2.link("https://www.baidu.com/"));
+		document.write("<hr/>");
+
+		document.write("5".sub()+6);
+		document.write("<br/>");
+
+		document.write("5".sup()+"6");
+		document.write("<hr/>");
+
+		document.write(str1.charAt(3));
+		document.write("<br/>");
+		document.write(str1.indexOf("d"));
+		document.write("<hr/>");
+
+		document.write(str1.concat(str2));
+		document.write("<br/>");
+
+		var str3 = "a-b-c-d-e";
+		var array1 = str3.split("-");
+		document.write(array1.length);
+		document.write("<br/>");
+
+		for(var i = 0;i<array1.length;i++){
+			document.write(array1[i]+"<br/>");
+		}
+		document.write("<hr/>");
+
+
+		document.write(str1.substr(2,1));
+		document.write("<br/>");
+		document.write(str1);
+		document.write("<br/>");
+
+		var str4 = "abcde";
+		document.write(str4.substring(2,5)); //
+		document.write("<br/>");
+	</script>
+ </body>
+</html>

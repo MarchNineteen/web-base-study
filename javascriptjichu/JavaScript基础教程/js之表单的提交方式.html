@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>js之表单的提交方式</title>
+ </head>
+ <body>
+ <!--form提交的3种方式
+	第一种：form自带的submit
+	第二种：使用button提交数据
+	第三种：使用超链接提交数据
+-->
+	<form id="form1" action="hello.html">
+		用户名：<input type="text" name="username">
+		密码：<input type="password" name="password">
+
+		<!--第一种：submit点击提交后自动跳转到hello.html页面-->
+		<input type="submit" value="提交">
+		<br/>
+
+
+		<!--第二种：button-->
+		<input type="button" name="btn" value="提交" onclick="submit();"/>
+
+		<!--超链接-->
+		<a href="hello.html">超链接提交</a>
+	</form>
+ </body>
+
+ <script>
+	function submit(){
+		var form1=document.getElementById("form1");
+		form1.submit();
+	}
+ </script>
+</html>

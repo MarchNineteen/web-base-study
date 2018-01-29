@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM内部插入append()与appendTo()</title>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#btn1").click(function() {
+				$("body").append("<div>123</div>");
+			});
+
+			$("#btn2").click(function(
+				) {
+				$("<div>456</div>").appendTo('body');
+			});
+		});
+	</script>
+</head>
+<body>
+	<button id="btn1">append方法演示</button>
+	<button id="btn2">appendTo方法演示</button>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery的属性与样式之切换样式.toggleClass()</title>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+		$("button").click(function(){
+			$("div").toggleClass('blue');
+		});
+	</script>
+	<style>
+		.blue {
+			color:blue;
+		}
+	</style>
+</head>
+<body>
+	<div>123456</div>
+	<button>点击我</button>
+</body>
+</html>

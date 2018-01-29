@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>JavaScript基础之函数</title>
+
+<p id="id1">计算4+5+6<p/>
+<p id="id2">计算5-3<p/>
+
+   <script>
+	function myFunction(){
+		alert("Hello World");
+	}
+
+	function myFunction2(a,b){
+		alert(a+b);
+	}
+
+	
+	/*return的作用：
+		1 返回值
+		2 结束该函数(方法)
+	*/
+	function myFunction3(a,b,c){
+		return (a+b+c);
+	}
+
+	function myFunction4(a,b){
+		if(a>b){
+			return;
+		}
+		return a+b;
+	}
+	
+	//在js中的调用这个方法
+	var a = myFunction3(1,2,3);
+	document.write(a+"<br/>");
+
+	//根据id获取对象，innerHTML设置属性或 返回表格行开始于结束之间的内容。
+	document.getElementById("id1").innerHTML = myFunction3(4,5,6);
+
+	//测试return的第2个作用
+	document.getElementById("id2").innerHTML = myFunction4(5,3);
+
+	/*局部变量和全局变量 和它们的声明周期
+	 局部变量： 在方法内声明的变量
+	 全局变量：在方法外声明的变量
+	 当一个变量没有声明时，那么会被当做全局变量来对待。
+
+	 生命周期：从被声明开始到被销毁。
+	 局部变量：函数运行以后被销毁
+	 全局变量：页面关闭后被销毁。
+	*/
+  </script>
+
+ </head>
+
+ <body>
+	
+	<!-- 在HTML中调用js中的方法-->
+	<!-- 函数
+		function functionName(){
+			要执行的代码
+		}
+	-->
+	<button onclick = "myFunction()">点击这里</button>
+	<p/>
+		<!-- 函数
+		function functionName(var1 ，var2){
+			要执行的代码
+		}
+		注意onclick都是小写，
+	-->
+
+	<button onclick = "myFunction2(1,2)">计算1+2</button>
+
+
+	<button onclick = "myFunction3(1,2,3)">计算1+2+3</button>
+ </body>
+</html>

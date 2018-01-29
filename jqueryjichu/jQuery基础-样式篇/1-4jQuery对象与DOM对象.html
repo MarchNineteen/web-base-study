@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery对象与DOM对象</title>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+		window.onload=function(){
+			var p = document.getElementById("first");
+			p.innerHTML = "first";
+			p.style.color = 'red';
+		}
+	</script>
+	<script>
+		$(document).ready(function() {
+			var $p = $("#second");
+			$p.html("second").css('color','red');
+		});
+	</script>
+</head>
+<body>
+	<p id="first">
+		
+	</p>
+	<p id="second">
+		
+	</p>
+</body>
+</html>

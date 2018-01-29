@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>JS之Math</title>
+ </head>
+ <body>
+  
+ </body>
+
+ <!--Math
+	floor(5.2);取小值，去掉小数
+	ceil(5.2);取大值，去掉小数，然后整数+1
+	round(5.3);四舍五入
+	random(); [0,1)之间的随机数
+
+
+	document.write("<br/>");
+	document.write("<hr/>");
+-->
+	<script>
+		var a=1.2;
+		document.write(Math.floor(a));
+		document.write("<br/>");
+
+		document.write(Math.ceil(a));
+		document.write("<br/>");
+
+		document.write(Math.round(1.2));
+		document.write("<br/>");
+
+
+		document.write(Math.random());
+		document.write("<br/>");
+
+
+		document.write(Math.random()*10);//[0,10)
+		document.write("<br/>");
+
+		document.write(Math.ceil(Math.random()*10));//[0,10]之间的随机整数
+	</script>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery对象转化成DOM对象</title>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+		var $div = $("div");
+		var div = $div.get(0);
+		div.style.color = 'red';
+	</script>
+</head>
+<body>
+	<div>元素一</div>
+	<div>元素二</div>
+	<div>元素三</div>
+</body>
+</html>

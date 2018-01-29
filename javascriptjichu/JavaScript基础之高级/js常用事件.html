@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>js常用事件</title>
+ </head>
+ <body>
+  <!-- input 的属性： type id name value onfocus onbulr onkeypress  onmouseover onmouseout -->
+
+  <input type="text" id="id1" name="username" value="" onfocus="onfocus1();" onblur="onblur1();"/>
+  <input type="text" id="id2" name="username"  value="请单击键盘" onkeypress="keypress1(event);" />
+  <input type="text" id="id3" name="username" onmouseover="mouseover1();" onmouseout="mouseout1()">
+
+
+  <!--表单-->
+  <form onsubmit="submit1();">
+	登录名：<input type="text" name="useername" value="" >
+	<input type="submit">
+  </form>
+ </body>
+
+	<script>
+		function onfocus1(){
+			document.getElementById("id1").value="";
+		}
+
+		function onblur1(){
+			document.getElementById("id1").value="focus";
+		}
+
+		//A65  a97 enter:13
+		function keypress1(obj){
+			alert(obj.keyCode);
+		}
+
+		function mouseover1(){
+			document.getElementById("id3").value="over";
+		}
+
+		function mouseout1(){
+			document.getElementById("id3").value="out"
+		}
+
+		function submit1(){
+			alert("submit");
+			//return false;
+		}
+	</script>
+</html>

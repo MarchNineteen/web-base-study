@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document对象</title>
+ </head>
+ <body>
+ <!--document代表整个文档，所我们可以获取到里面的任何对象。常用的4个方法
+	write();
+	getElementsById();
+	getElementsByName();
+	getElementsByTagName();
+	-->
+	<input type="text" id="id1" name="username" value="value1"/><br/> <br/>
+	<input type="text" name="username" value="value2"/><br/> <br/>
+	<input type="text" name="username" value="value3"/><br/> <br/>
+
+	<input type="button" value="getElementByName" onclick="method1();">
+	<input type="button" value="getElementByTagName" onclick="method2();">
+ </body>
+	<script>
+		function method1(){
+			var names=document.getElementsByName("username");
+			alert(names.length);
+			for(var i=0;i<names.length;i++){
+				alert(names[i].value);
+			}
+		}
+
+		function method2(){
+			var names=document.getElementsByTagName("input");
+			alert(names.length);
+			for(var i=0;i<names.length;i++){
+				alert(names[i].value);
+			}
+		}
+
+	</script>
+</html>

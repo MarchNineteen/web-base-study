@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery鼠标事件之click与dbclick事件</title>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#click").click(function() {
+				alert("click");
+			});
+			$("#dbclick").dblclick(function() {
+				alert("dbclick");
+			});
+		});
+	</script>
+</head>
+<body>
+	<button id="click">click事件</button>
+	<button id="dbclick">dbclick事件</button>
+</body>
+</html>

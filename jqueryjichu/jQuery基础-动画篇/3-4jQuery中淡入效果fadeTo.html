@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery中淡入效果fadeTo</title>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("button").click(function() {
+				$("p").fadeTo(3000,0.2);
+			});
+		});
+	</script>
+	<style>
+		p {
+			color:red;
+		}
+	</style>
+</head>
+<body>
+	<p>123</p>
+	<button>点击</button>
+</body>
+</html>

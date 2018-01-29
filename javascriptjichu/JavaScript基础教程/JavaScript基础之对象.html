@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+ </head>
+ <body>
+
+	<script>
+	    var a = "Hello World";
+		document.write(a.length+"<br/>");
+
+		/*第一个符合条件的角标*/
+		document.write(a.indexOf("l",0)+"<br/>");
+		
+		/*如果符合条件的有多个，那么只替换第一个*/
+		document.write(a.replace("l","M")+"<br/>");
+
+		/*search()检索子字符串第一次出现的位置*/
+		document.write(a.search("/Wor/")+"</br/>");
+
+
+		/*创建JavaScript对象*/
+		person = new Object();
+		person.firstName = "刘诗诗";
+		person.age = 30;
+		person.sex = "女";
+		document.write(person.sex+"<br/>");
+		
+
+		/*访问对象的属性objectName.perprotyName
+		  访问对象的方法objectName.methodName()
+		*/
+		document.write(a.length+"<br/>");
+		document.write(a.toUpperCase()+"<br/>");
+
+	</script>
+
+ </body>
+</html>

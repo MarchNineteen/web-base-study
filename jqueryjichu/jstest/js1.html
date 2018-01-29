@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        function test() {
+            var person = {name:"ww",age:12,sex:"男"}
+            var x = document.getElementById("demo").value;
+            alert(person.name);
+            alert(person.age);
+            alert(person.sex);
+        }
+
+        $(function () {
+            test();
+        })
+    </script>
+</head>
+<body>
+
+<input id="demo" type="text">
+<button id="button" type="button" onclick="test()">测试</button>
+</body>
+</html>

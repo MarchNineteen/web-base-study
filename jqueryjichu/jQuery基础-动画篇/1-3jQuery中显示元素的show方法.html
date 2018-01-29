@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery中显示元素的show方法</title>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("button").click(function() {
+				$("p").hide(3000).show(3000);
+			});
+		});
+	</script>
+</head>
+<body>
+	<p>123</p>
+	<button>点击</button>
+</body>
+</html>

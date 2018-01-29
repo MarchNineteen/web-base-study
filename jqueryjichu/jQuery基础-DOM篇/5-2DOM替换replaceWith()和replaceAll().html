@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM替换replaceWith()和replaceAll()</title>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			//$("p").replaceWith("<a href='https://www.baidu.com'>456</a>");
+			$("<a href='https://www.baidu.com'>456</a>").replaceAll($("p"));
+		});
+	</script>
+</head>
+<body>
+	<div>
+		<p>123</p>
+	</div>
+</body>
+</html>

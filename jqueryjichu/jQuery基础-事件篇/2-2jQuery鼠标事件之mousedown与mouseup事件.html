@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery鼠标事件之mousedown与mouseup事件</title>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#mousedown").mousedown(function(){
+				alert("mousedown");
+			});
+
+			$("#mouseup").mouseup(function() {
+				alert("mouseup");
+			});
+		});
+	</script>
+</head>
+<body>
+	<button id="mousedown">mousedown</button>
+	<button id="mouseup">mouseup</button>
+</body>
+</html>

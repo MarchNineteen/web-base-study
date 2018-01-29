@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery选择器之表单对象属性筛选选择器</title>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+	<h2>子元素筛选选择器</h2>
+    <h3>enabled、disabled</h3>
+    <form>
+        <input type="text" value="未设置disabled" />
+        <input type="text" value="设置disabled" disabled="disabled" />
+        <input type="text" value="未设置disabled" />
+    </form>
+
+    <script type="text/javascript">
+        //查找所有input所有可用的（未被禁用的元素）input元素。
+        $("input:enable").css("border", "2px groove red");
+    </script>
+
+    <script type="text/javascript">
+        //查找所有input所有不可用的（被禁用的元素）input元素。
+        $("input:disable").css("border", "2px groove blue");
+    </script>
+
+    <h3>checked、selected</h3>
+    <form>
+        <input type="checkbox" checked="checked">
+        <input type="checkbox">
+        <input type="radio" checked>       
+        <input type="radio">
+        
+        <select name="garden" multiple="multiple">
+            <option>imooc</option>
+            <option selected="selected">慕课网</option>
+            <option>aaron</option>
+            <option selected="selected">博客园</option>
+          </select>
+
+    </form>
+
+    <script type="text/javascript">
+         //查找所有input所有勾选的元素(单选框,复选框)
+         //移除input的checked属性
+        $("input:checked").removeAttr('checked')
+    </script>
+
+    <script type="text/javascript">
+         //查找所有option元素中,有selected属性被选中的选项
+         //移除option的selected属性
+        $("input:selected").removeAttr('selected')
+    </script>
+</body>
+</html>

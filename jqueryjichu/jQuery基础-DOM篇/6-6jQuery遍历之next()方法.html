@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery遍历之next()方法</title>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("li:contains('123')").next().css("color","red");
+		});
+	</script>
+</head>
+<body>
+	<ul>
+		<li>123</li>
+		<li>456</li>
+		<li>789</li>
+	</ul>
+</body>
+</html>

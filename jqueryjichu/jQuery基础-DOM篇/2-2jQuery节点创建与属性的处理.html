@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery节点创建与属性的处理</title>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<style>
+		* {
+			margin:0;
+			padding:0;
+		}
+
+		.bgBlue {
+			background-color: red;
+		}
+	</style>
+	<script>
+		$(document).ready(function() {
+			$("body").append("<div>123</div>");
+			$("div").addClass('bgBlue');
+		});
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

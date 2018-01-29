@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery鼠标事件之focusin事件</title>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("input").focusin(function() {
+				$(this).css("border","1px solid red");
+			});
+		});
+	</script>
+	<style>
+		* {
+			margin:0;
+			padding:0;
+		}
+
+		div {
+			width:100px;
+			height:50px;
+			background: red;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<input type="text" name="" id="">
+	</div>
+</body>
+</html>

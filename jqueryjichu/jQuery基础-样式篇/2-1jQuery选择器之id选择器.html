@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery选择器之id选择器</title>
+	<style>
+		div {
+			width:200px;
+			height:200px;
+			float:left;
+			border:3px solid blue;
+		}
+	</style>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#imooc").css('border', '3px solid red');
+		});
+	</script>
+</head>
+<body>
+	<div id="aaron">id="aaron"选中</div>
+	<div id="imooc">jQuery选中</div>
+	<div id="imooc">jQuery未选中</div>
+</body>
+</html>

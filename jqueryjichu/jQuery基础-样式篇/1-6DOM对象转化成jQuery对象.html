@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM对象转化成jQuery对象</title>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+	<div>元素一</div>
+	<div>元素二</div>
+	<div>元素三</div>
+	<script>
+		var div = document.getElementsByTagName("div");
+		var $div = $(div);
+		var $first = $div.first();
+		$first.css('color','red');
+	</script>
+</body>
+</html>

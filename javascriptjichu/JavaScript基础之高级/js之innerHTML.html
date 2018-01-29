@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>js之innerHTML</title>
+ </head>
+ <body>
+	<div id="div1" style="width:300px;height:200px; border:solid red 2px;">你好，中国。</div>
+	<br/>
+	<input type="button" value="innerHTML插入值" onclick="insert();">
+	<br/>
+	<input type="button" value="innerHTML取值" onclick="get();">
+ </body>
+ <script>
+	function insert(){
+		// "<table border='3'><tr><td>a</td><td>b</td></tr></table>"   "Hello World"
+		document.getElementById("div1").innerHTML="Hello World";
+	}
+
+	function get(){
+		var a = document.getElementById("div1").innerHTML;
+		alert(a);
+	}
+ </script>
+</html>

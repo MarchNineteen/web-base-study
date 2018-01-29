@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>HTML绑定js事件的3种方式</title>
+ </head>
+ <body>
+  <!-- 方法一：-->
+  <input type="button" id="btn1" value="btn1" onclick="method1();"/>
+  <input type="text" id="btn2" value="text"/>
+  <input type="button" id="btn3" value="bnt3">
+ </body>
+
+	<script>
+		function method1(){
+			alert("btn1");
+		}
+
+		//方法二：
+		function method2(){
+			alert("btn2");
+		}
+		document.getElementById("btn2").onclick=method2;
+
+		//方法三：
+		document.getElementById("btn3").onclick=function(){
+			alert("btn3");
+		}
+	</script>
+</html>

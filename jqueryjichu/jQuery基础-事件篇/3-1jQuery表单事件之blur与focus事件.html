@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery表单事件之blur与focus事件</title>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("input").focus(function() {
+				alert("focus");
+			});
+
+			$("input").blur(function() {
+				alert("blur");
+			});
+		});
+	</script>
+</head>
+<body>
+	<input type="text" name="" id="">
+</body>
+</html>

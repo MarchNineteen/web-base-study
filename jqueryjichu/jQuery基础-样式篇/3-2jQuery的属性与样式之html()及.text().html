@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery的属性与样式之html()及.text()</title>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			var text = $("div").html();
+			var html = $("div").text();
+			alert(text);
+			alert(html);
+		});
+	</script>
+</head>
+<body>
+	<div><p>12<p>123</p>3</p></div>
+</body>
+</html>

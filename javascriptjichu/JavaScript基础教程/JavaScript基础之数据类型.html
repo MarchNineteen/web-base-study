@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+ </head>
+ <body>
+  
+  <script>
+		var a = 5;
+		var a = true;
+		var a = "abc";
+
+		/*字符串：*/
+		document.write(a+"<br/>");
+		
+		var b = "abc'def'";
+		document.write(b+"<br/> ");
+
+		var c= "higkl";
+		document.write(c+"<br/>");
+
+		/*数字*/
+		var d = 555;
+		var e = 1.23456;
+		var f = 5e2;
+		var g = 123e-2;
+		document.write(d+"<br/>");
+		document.write(e+"<br/>");
+		document.write(f+"<br/>");
+		document.write(g+"<br/>");
+		
+		/*布尔*/
+		var h = true;
+		var i = false;
+		document.write(h+"<br/>");
+		document.write(i+"<br/>");
+
+		/*数组的3种创建方式*/
+		var j = new Array();
+		j[0] = 1;
+		j[1] = 2;
+		j[2] = 3;
+		document.write("j="+j+"<br/>");
+
+        /**/
+		var l = new Array(false,true,false);
+		for(i = 0;i<l.length;i++){
+			document.write("l["+i+"]="+l[i]+"<br/>");
+		}
+
+		
+
+		var k= ["a","b","c"];
+		for(i = 0;i<k.length;i++){
+			document.write("k["+i+"]="+k[i]+"<br/>");
+		}
+		
+
+		/*数组中的元素都应该是同一种类型*/
+		/*
+			var k = new Array{1,true,"a"};
+		*/
+
+
+		/*对象*/
+		var person = {name:"cqc",age:20,sex:"男"};
+		/*对象有2种寻址方式*/
+		document.write("person.name="+person.name+"<br/>");
+		document.write("person['name']="+person["name"]+"<br/>");
+
+		var stuent = {
+			name : "周星驰",
+			age : "60",
+		};
+
+		/*undefined 和 null 表示不含有变量，如果变量a没有赋值，那么默认是undefined*/
+
+		var x;
+		var m = null;
+		
+		document.write("x="+x+"<br/>");
+		document.write("m="+m+"<br/>");
+
+		/*声明变量,注意没有(),
+		关于元素的默认值
+		 new String和new Array没有默认值，
+		 new Number   默认值是 0
+		 new Boolean  默认值是 false
+		 new Object   默认值是 object
+		 */
+		var n = new Number;
+		var o = new String;
+		var p = new Array;
+		var q = new Boolean;
+		var r = new Object;
+
+		document.write("n="+n+"<br/>");
+		document.write("o="+o+"<br/>");
+		document.write("p="+p+"<br/>");
+		document.write("q="+q+"<br/>");
+		document.write("r="+r+"<br/>");
+
+	</script>
+ </body>
+</html>

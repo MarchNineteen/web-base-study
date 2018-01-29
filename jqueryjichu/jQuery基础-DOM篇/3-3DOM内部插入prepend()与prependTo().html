@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM内部插入prepend()与prependTo()</title>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#prepend").prepend("<p>123</p>");
+			$("<p>456</p>").prependTo($("#prependTo"));
+		});
+	</script>
+</head>
+<body>
+	<div id="prepend">
+		
+	</div>
+	<div id="prependTo">
+		
+	</div>
+</body>
+</html>

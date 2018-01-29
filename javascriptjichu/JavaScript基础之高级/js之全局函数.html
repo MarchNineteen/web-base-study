@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>js之全局函数</title>
+ </head>
+ <body>
+  
+ </body>
+  <!--全局函数
+	eval(str);把str当做js代码来执行
+	encodeURI();对String进行编码
+	decodeURI();对编码后的字符串进行解码
+	isNaN(a);判断a的类型是不是Number,(NaN:not a number);是则返回false，不是则返回true
+	parseInt(str);把string解析成int
+ -->
+
+ <script>
+	//eval()
+	var a="alert('Hello World')";
+	//eval(a);
+
+
+	//encodeURI()  decodeURI();
+	var a=encodeURI("ABCD1234中华人民共和国");
+	document.write(encodeURI("ABCD1234中华人民共和国"));
+	document.write("<br/>");
+	document.write(decodeURI(a));
+	document.write("<hr/>");
+
+	/*字符串中只有数字，也会把认为是数字，返回false*/
+	var b = "3";
+	var c = 3;
+	var d = "abc";
+
+	document.write(isNaN(b));
+	document.write("<br/>");
+	document.write(isNaN(c));
+	document.write("<br/>");
+	document.write(isNaN(d));
+	document.write("<hr/>");
+
+
+	
+	document.write(parseInt("3")+",");
+	document.write(parseInt("3")+2+",");
+	document.write(parseInt("3")+2+"A");
+	document.write("<br/>");
+	document.write(parseInt("3")+"A"+2);
+				 
+ </script>
+</html>

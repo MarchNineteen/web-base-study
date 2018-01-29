@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>js函数没有重载</title>
+ </head>
+ <body>
+  
+ </body>
+	 <script>
+		function add1(a,b){
+			alert(a+b);
+		}
+		function add1(a,b,c){
+			alert(a+b+c);
+		}
+
+		function add1(a,b,c,d){
+			alert(a+b+c+d);
+		}
+/*
+		//调用函数，结果只有最有一个有值
+		add1(1,2);//Nan
+		add1(1,2,3);//Nan
+		add1(1,2,3,4);//10 */
+
+		/*调用函数是，要把参数传递过去，函数中有一个数组arguments，是用来保存这些参数的。可以用它来模拟
+		*/
+		function add2(){
+			var sum=0;//sum必须初始化
+			for(var i=0;i<arguments.length;i++){
+				sum = sum+arguments[i];
+			}
+			alert(sum);
+		}
+
+		add2(1,2);
+		add2(1,2,3);
+		add2(1,2,3,4);
+	 </script>
+</html>

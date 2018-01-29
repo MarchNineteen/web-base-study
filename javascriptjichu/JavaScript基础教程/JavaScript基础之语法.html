@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>JavaScript基础之语法</title>
+ </head>
+ <body>
+  
+  <script>
+   var name="abcd";
+   var NAME="ABCD";
+
+   /*js是区分大小写的*/
+   console.log(name);
+   console.log(NAME);
+
+   /*JavaScript中的标识符是由字母、数字、下划线、美元符号（$）组成，且不能以数字开头。*/
+	var abc;
+	var _abc;
+	var $ab;
+	var abc123d;
+	// var 5ab;  /*错误，不能艺术字开头*/
+
+   /**daf*/
+	var age;
+	var myAge;
+	var myNameAgeFamily;
+	
+	//var 4 - 2
+	var c=(5-3);
+
+	var a = 5;
+	var b = 3;
+	if(a > b){
+		alert("5比3大");
+	}
+
+
+	function test(){
+		var d = 5;
+	}
+	test();
+	alert(d);
+
+
+	function test(){
+		 e = 6;
+	}
+	test();//调用方法
+	alert(e);
+  </script>
+ </body>
+</html>

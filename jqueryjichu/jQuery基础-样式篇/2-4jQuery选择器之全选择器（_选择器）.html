@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery选择器之全选择器（*选择器）</title>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("*").css("color","red");
+		});
+	</script>
+</head>
+<body>
+	<div class="aaron">
+        <p>class="aaron"</p>
+        <p>选中</p>
+    </div>
+    <div class="aaron">
+        <p>class="aaron"</p>
+        <p>选中</p>
+    </div>
+    <div class="imooc">
+        <p>class="imooc"</p>
+        <p>jQuery选中</p>
+    </div>
+    <div class="imooc">
+        <p>class="imooc"</p>
+        <p>jQuery选中</p>
+    </div>
+</body>
+</html>

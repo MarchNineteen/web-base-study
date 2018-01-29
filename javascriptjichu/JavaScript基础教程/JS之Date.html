@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>JS之Date</title>
+ </head>
+ <body>
+  
+ </body>
+
+ 	<!-- Date 获取Date对象 new Date()
+		toLocaleString();将时间格式化成本地格式，并转成字符串
+		getFullYear();获取当前年份
+		getMonth();获取当前月，默认从0开始
+		getDay();本天是周几
+		getDate();本天在当月是第几天，从1开始
+		getHours();现在的小时数
+		getMinutes();现在是第几分钟
+		getSeconds();当前秒
+		getTime();从1970年1月1日到现在的毫秒数
+	-->
+
+	<script>
+		/**
+		document.write("<hr/>");
+		*/
+		var date = new Date();
+		document.write(date);
+		document.write("<br/>");
+
+		document.write(date.toLocaleString());
+		document.write("<br/>");
+
+		document.write(date.getFullYear());
+		document.write("<br/>");
+
+		document.write(date.getMonth());
+		document.write("<br/>");
+
+		document.write(date.getDay());
+		document.write("<br/>");
+
+		document.write(date.getDate());
+		document.write("<br/>");
+
+		document.write(date.getHours());
+		document.write("<br/>");
+
+		document.write(date.getMinutes());
+		document.write("<br/>");
+
+		document.write(date.getSeconds());
+		document.write("<br/>");
+
+		document.write(date.getTime());
+		document.write("<br/>");
+
+		var date2 = new Date(date.getTime());
+		document.write(date2);
+
+	</script>
+</html>
