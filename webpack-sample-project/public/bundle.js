@@ -65,6 +65,14 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+//main.js
+const greeter = __webpack_require__(1);
+document.querySelector("#root").appendChild(greeter());
+
+/***/ }),
+/* 1 */
 /***/ (function(module, exports) {
 
 // Greeter.js
