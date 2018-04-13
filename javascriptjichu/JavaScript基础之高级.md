@@ -90,7 +90,8 @@ add2(1,2,3,4);
 ```
 ## 全局函数 ##
 |函数|说明|
-|eval(str)|把string当做js代码来执行|
+|:-|:-|
+|eval(str)| 把string当做js代码来执行|
 |encodeURI(str)|对String进行编码|
 |decodeURI(var)|对编码后的字符串进行解码|
 |isNaN(var a)|判断a的类型是不是number，或者可不可以转换成Number。是number，返回false；不是，返回true。。NAN:not 啊 number|

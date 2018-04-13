@@ -113,6 +113,3 @@ document.write("m="+m+"<br/>");
 x=undefined
 m=null
 ```
-
-# 其它 #
-demo: http://git.oschina.net/JavaScript01/javascriptjichu
