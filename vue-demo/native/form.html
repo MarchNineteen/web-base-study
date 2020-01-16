@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script src="vue.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div id="app">
+  <h2>文本</h2>
+  <input v-model="message" placeholder="edit me">
+  <p>Message is: {{ message }}</p>
+
+  <h2>多行文本</h2>
+  <textarea v-model="textAreaMsg" style="border: 1px solid #007AFF; width: 200px; height: 100px;"></textarea>
+  <p>textAreaMsg is: {{ textAreaMsg }}</p>
+
+  <h2>单个复选框</h2>
+  <input type="checkbox" id="checkbox" value="checkbox" v-model="checked" />
+  <label for="checkbox">{{ checked }}</label>
+
+  <h2>多个复选框</h2>
+  <input type="checkbox" id="checkboxArr1" value="checkboxArr1" v-model="checkboxArr" />
+  <label for="checkbox">checkboxArr1</label>
+  <input type="checkbox" id="checkboxArr2" value="checkboxArr2" v-model="checkboxArr" />
+  <label for="checkbox">checkboxArr2</label>
+  <input type="checkbox" id="checkboxArr3" value="checkboxArr3" v-model="checkboxArr" />
+  <label for="checkbox">checkboxArr3</label>
+  <p>checkboxArr : {{ checkboxArr }}</p>
+
+  <h2>单选按钮</h2>
+  <input type="radio" id="radioOne" value="One" v-model="picked" />
+  <label for="radioOne">One</label>
+  <input type="radio" id="radioTwo" value="Two" v-model="picked" />
+  <label for="radioTwo">Two</label>
+  <p>Picked: {{ picked }}</p>
+
+  <h2 ref="selectDiv">选择框</h2>
+  <select v-model="selected">
+    <option disabled value="">请选择</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+  </select>
+  <p>已选择: {{ selected }}</p>
+
+</div>
+
+<script type="text/javascript">
+  var app = new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello Vue!',
+      textAreaMsg : "textAreaMsg",
+      checked : true,
+      checkboxArr :[],
+      picked : "One",
+      selected : "",
+      name : "Vue",
+    },
+    mounted() {
+      this.$refs.selectDiv, //获取到元素
+      console.log(this.$refs.selectDiv);
+      console.log(this.$refs.selectDiv.innerHTML)
+    },
+    method: {
+
+    }
+  });
+</script>
+
+</body>
+</html>

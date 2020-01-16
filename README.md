@@ -2,3 +2,5 @@
 - JavaScript
 - jQuery
 - webpackDemo
+- vue demo
+- uni-app demo

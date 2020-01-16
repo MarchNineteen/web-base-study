@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<script src="vue.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div id="app">
+	<template v-for="item in items">
+	    <li>{{ item.message }}</li>
+	    <li class="divider" role="presentation"></li>
+	  </template>
+	  
+	  
+	<ul>
+		<li v-for="item,index in items" :key="index">
+		{{index}}{{ item.message }}
+		</li>
+	</ul>
+	<ul>
+		<li v-for="value, key in object">
+			{{key}} : {{ value }}
+		</li>
+	</ul>
+	<a @click="addItem()">点击增加元素</a>
+	
+	<v-text v-for="n in plusNum">{{n}}</v-text>
+</div>
+<script type="text/javascript">
+var vm = new Vue({
+	el : "#app",
+	data : {
+		items : [
+			{ message: 'Foo' },
+			{ message: 'Bar' }
+		],
+		object: {
+			title: 'How to do lists in Vue',
+			author: 'Jane Doe',
+			publishedAt: '2016-04-10'
+		},
+		numbers : [ 1, 2, 3, 4, 5 ]
+	},
+	methods:{
+		addItem: function(){
+			this.items = this.items.filter(function(item) {
+				return item.message.match(/Foo/)
+			})
+		},
+	},
+	computed: {
+		plusNum : function() {
+			return this.numbers.filter(function (number) {
+			  return number % 2 === 0
+			  }
+			)
+		},
+	}
+});
+</script>
+</body>
+</html>
