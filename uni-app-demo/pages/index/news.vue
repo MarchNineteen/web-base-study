@@ -1,5 +1,19 @@
 <template>
 	<view class="content">
+		<view>
+			<swiper :indicator-dots="indicatorDots" :autoplay="autoplay" :interval="interval" :duration="duration"
+			 :previous-margin="margin" :next-margin="margin">
+			 <div  v-for="(item,key) in banner" :key="key">
+				<swiper-item>
+					<!-- <view class="swiper-item" style="background: #007AFF;"></view> -->
+					 <navigator url="">  
+						   <image :src="item" style="height: 400upx;"/>   
+					 </navigator> 
+				</swiper-item>
+			 </div>
+			</swiper>
+		</view>
+
 		<view class="uni-list">
 			<!-- <navigator url=""></navigator> -->
 			<view class="uni-list-cell" hover-class="uni-list-cell-hover" v-for="(item,index) in news" :key="index" @tap="openInfo(item.post_id)">
@@ -19,7 +33,17 @@
 	export default {
 		data() {
 			return {
-				news: {}
+				news: {},
+				banner: [
+					'/static/image/api.png',
+					'/static/image/component.png',
+					'/static/image/news.png',
+				],
+				indicatorDots: true,
+				autoplay: true,
+				margin: '',
+				duration: 1000,
+				interval: 3000
 			}
 		},
 		onLoad: function() {

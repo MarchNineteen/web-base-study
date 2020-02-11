@@ -19,7 +19,33 @@
             "style" : {
 				"navigationBarTitleText": "文章详情"
 			}
-        }
+        },
+		{
+			"path": "pages/component/component",
+			"style": {
+				"navigationBarTitleText": "组件"
+			}
+		}, 
+		{
+			"path": "pages/component/swiper/swiper",
+			"style": {
+				"navigationBarTitleText": "swiper"
+			}
+		}, {
+			"path": "pages/component/scroll-view/scroll-view",
+			"style": {
+				"navigationBarTitleText": "scroll-view"
+			}
+		}, {
+			"path": "pages/component/form/form",
+			"style": {}
+		},
+		{
+			"path": "pages/component/web-view/web-view",
+			"style": {
+				"navigationBarTitleText": "web-view"
+			}
+		}
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
@@ -32,6 +58,7 @@
 		"selectedColor": "#007AFF",
 		"borderStyle": "black",
 		"backgroundColor": "#F8F8F8",
+		// "position" : "top",
 		"list": [
 			{
 				"pagePath": "pages/index/index",
@@ -45,16 +72,17 @@
 				"selectedIconPath": "static/logo.png",
 				"text": "文章列表"
 			}, {
-				"pagePath": "pages/index/index",
-				"iconPath": "static/logo.png",
-				"selectedIconPath": "static/logo.png",
-				"text": "扩展组件"
+				"pagePath": "pages/component/component",
+				"iconPath": "static/image/component.png",
+				"selectedIconPath": "static/image/component_sel.png",
+				"text": "组件"
 			}, {
 				"pagePath": "pages/index/index",
 				"iconPath": "static/logo.png",
 				"selectedIconPath": "static/logo.png",
-				"text": "模板"
+				"text": "测试bar1"
 			}
+			
 		]
 	},
 	"condition" : { //模式配置，仅开发期间生效

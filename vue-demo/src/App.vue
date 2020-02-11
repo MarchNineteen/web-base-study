@@ -1,14 +1,14 @@
-<template>
+<template xmlns:v-slot="http://www.w3.org/1999/XSL/Transform">
   <div id="app">
     <img src="./assets/logo.png">
     <h1>{{ msg }}</h1>
-  
+
     <!-- <div> -->
     <div @click="pChangeTitle($event)">
 		<change-title :title="title1" data-id="title1">
 			<!-- 自定义方法只接受子组件传参 无事件 如果要带括号必须加$event -->
 		<!-- <change-title :title="title1" data-id="title1"  @sChangeTitle='pChangeTitle($event)'> -->
-			
+
 			<!-- <div>{{user.firstName}}</div> -->
 			<!-- <template v-slot:default="{user }">
 				{{ user.firstName }}
@@ -61,7 +61,7 @@
 <script>
 import changeTitle from './components/changeTitle';
 import myTitle from './components/myTitle';
-  
+
 export default {
   name: 'app',
   components: {
