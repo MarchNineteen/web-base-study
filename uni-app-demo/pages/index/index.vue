@@ -16,6 +16,9 @@
 		<view class="uni-padding-wrap uni-common-mt">
 			<button type="primary" @click="bindClickTap">{{btnText}}</button>
 		</view>
+		<view class="uni-padding-wrap uni-common-mt">
+			<button type="primary" @click="scanne">扫码</button>
+		</view>
 
 
 		<view class="uni-flex uni-row">
@@ -241,7 +244,7 @@
 			},
 			getDishesObjects() {
 				console.log("getDishesObjects...");
-				
+
 				// uni.getStorage({
 				// 	key: 'dishesObjects',
 				// 	success: function(res) {
@@ -297,7 +300,37 @@
 				}
 
 			},
-			bindClickTap() {}
+			bindClickTap() {},
+			scanne() {
+				// 允许从相机和相册扫码
+				uni.scanCode({
+					success: function(res) {
+						console.log('条码类型：' + res.scanType);
+						var result = JSON.parse(res.result);
+						console.log('条码内容：' + result.id);
+						
+						uni.request({
+							url: 'http://192.168.11.67:8080/app/scan?uuid=' + result.id, //仅为示例，并非真实接口地址。
+						
+							header: {},
+							success: (arr) => {
+								arr = arr.data;
+								console.log(arr);
+								if (arr == 'NO_VALID') {
+									console.log("二维码已失效");
+									window.location.reload();
+								} else if (arr == 'NO_USE') {
+									console.log("登录成功 跳转")
+								} else if (arr == 'PRE_USE') {
+									console.log("扫描成功待手机确认")
+								}
+							}
+						});
+
+					}
+				});
+			},
+
 		}
 	}
 </script>
