@@ -8,17 +8,16 @@ plugins:
     
 <slide class="bg-black-blue aligncenter" image="https://source.unsplash.com/C1HhAQrbykQ/">
 
-2020{.text-subtitle.animated.fadeInDown.delay-800}
-
 # 转正述职ppt {.text-landing.fadeInRight}
 
 ---
 
-汇报人：xxx{.text-intro.animated.fadeInUp.delay-800}
+汇报人：张晓红{.text-intro.animated.fadeInUp.delay-800}
 
-汇报时间：2020-xx-xx{.text-intro.ghost.animated.flipInX.delay-1500} 
+汇报时间：2020-11-18{.text-intro.ghost.animated.flipInX.delay-1500} 
 
-<slide>
+<slide >
+
 ### 目录
 
 :::flexblock {.features}
@@ -100,38 +99,39 @@ VP of Design
 
 :::
 
-<slide :class="size-80">
+<slide :class="size-80 lightSpeedIn">
 
 ### **贰`:`与岗位相关的周边能力和素质**
 
 ---
 :::steps
 
-## 一`:`计算机能力
+## 一`:`计算机能力{.animated.lightSpeedIn.delay-400}
 
-视频剪辑：帮助市场中心及公司解决视频相关需求
+- 视频剪辑：帮助市场中心及公司解决视频相关需求{.animated.fadeInUp.delay-400}
 
-海报设计：五楼大厅展屏数据海报设计、商务宣传资料的设计制作
+- 海报设计：五楼大厅展屏数据海报设计、商务宣传资料的设计制作{.animated.fadeInUp.delay-400}
 
-Office：浙江省二级
-
----
-
-## 二`:`系统搭建经验
-
-- 参与过CRM和Salesforce系统转换的需求解决方案和流程管理设计
+- Office：浙江省二级{.animated.fadeInUp.delay-400}
 
 ---
 
-## 三`:`沟通协调
+## 二`:`系统搭建经验{.animated.lightSpeedIn.delay-400}
 
-具备横向与公司内部沟通和纵向解决客户需求能力
+- 参与过CRM和Salesforce系统转换的需求解决方案和流程管理设计{.animated.fadeInUp.delay-400}
 
 ---
 
-## 四`:`组织策划
+## 三`:`沟通协调{.animated.lightSpeedIn.delay-400}
 
-大型活动的组织策划（晚会流程设计、节目筛选、催场、现场音视频、灯光控制等）、摄影摄像、预算控制
+- 具备横向与公司内部沟通和纵向解决客户需求能力{.animated.fadeInUp.delay-400}
+
+---
+
+## 四`:`组织策划{.animated.lightSpeedIn.delay-400}
+
+- 大型活动的组织策划（晚会流程设计、节目筛选、催场、现场音视频、灯光控制等）、摄影摄像、预算控制{.animated.fadeInUp.delay-400}
+
 
 <slide :class="size-60">
 
@@ -150,7 +150,9 @@ Office：浙江省二级
 
 ## 10月
 
-月报完成，市场中心完整制度撰写完成，参与央视财经对强哥的采访并整理话术，后期给销售进行培训，准确率计算方式确定并及时更新数据，完成五楼大屏10月数据海报设计，初步构思CRM系统需求并整理，市场中心组织架构规划汇总，协助左总处理临时事宜
+月报完成，市场中心完整制度撰写完成，参与央视财经对强哥的采访并整理话术，后期给销售进行培训，准确率计算方式确定并及时更新数据，
+完成五楼大屏10月数据海报设计，初步构思CRM系统需求并整理，市场中心组织架构规划汇总，协助左总处理临时事宜{.animated.flipInX.delay-400}
+
 
 :::
 
@@ -160,9 +162,9 @@ Office：浙江省二级
 
 ### 肆`:`未来工作规划展望
  
-* :短期三个月\::{.text-label} CRM上线，制度落实
-* :中期一年\::{.text-label}各方面能力提升一个阶级，尤其是管理能力
-* :长期\::{.text-label} 团队管理
+* :短期三个月\::{.text-label} CRM上线，制度落实{.animated.fadeInLeft.delay-400}
+* :中期一年\::{.text-label}各方面能力提升一个阶级，尤其是管理能力{.animated.flipInX.delay-400}
+* :长期\::{.text-label} 团队管理{.animated.fadeInRight.delay-400}
 {.description}
 
 ---
@@ -180,17 +182,22 @@ Office：浙江省二级
 ![](https://webslides.tv/static/images/davinci.png)
 
 ---
-> “付出和回报是成正比的，不做一味多余的付出，也不错过任何一个可以努力的机会
-      影响：输出产品质量要求较高、从零开始、工作习惯”
-> ==张晓红==
+> “付出和回报是成正比的，不做一味多余的付出，也不错过任何一个可以努力的机会”
+      
+> “输出产品质量要求较高、从零开始、工作习惯”
 
 
 <slide class="frame" :class="size-60 bg-white tobuild bounce">
 
 ### :fa-info-circle large: 陆`:`对公司/工作的思考及改善建议
 
-**入职以来充分感受到企业文化，轻松和谐的工作氛围，流程节点上可以多加完善**
+- **入职以来充分感受到企业文化，轻松和谐的工作氛围，流程节点上可以多加完善**
+- **222**{.tobuild}
+- **333**{.tobuild}
 
+<slide class="bg-black aligncenter" image="https://source.unsplash.com/n9WPPWiPPJw/ .anim">
+
+## Thank You For Watching
 
 
 <slide :class="size-60">
