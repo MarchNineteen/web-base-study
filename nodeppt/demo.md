@@ -18,44 +18,179 @@ plugins:
 
 汇报时间：2020-xx-xx{.text-intro.ghost.animated.flipInX.delay-1500} 
 
+<slide>
+### 目录
+
+:::flexblock {.features}
+
+:壹:
+## 本职工作掌握度/专业能力{.build.moveIn}
+
+ ----
+
+:贰:
+## 与岗位相关的周边能力和素质{.build.moveIn}
+
+----
+
+:叁:
+## 工作质量和成效{.build.moveIn}
+
+---- 
+
+:肆:
+## 未来工作规划展望{.build.moveIn}
+ 
+---- 
+
+:伍:
+## 价值观及对他人的正面影响{.build.moveIn}
+ 
+---- 
+
+:陆:
+## 对公司/工作的思考及改善建议{.build.moveIn}
+
+:::
+
+<slide :class="size-50">
+### **壹`:`本职工作掌握度/专业能力**
+
+---
+
+1. **CRM系统框架搭建**{.bounce}
+2. **市场中心制度撰写**{.swing}
+3. **月报制作**（营收、销售额、销量、计划完成率、客户排名、应收账款、销售费用、研发投入产出比、
+呆滞库存、成品仓库存、立项汇总）{.flash}
+4. **绩效考核细则制定及统计**{.pulse}
+5. **展厅讲解培训资料**{.shake}
+6. **ITO数据统计**{.bounceIn}
+7. **案例收集**{.wobble}
+8. **数据海报设计**{.fadeInLeft}
+9. **部门文化建设**{.flipInX}
+10. **部门经费管理**{.tada}
+{.text-cols.build}
+
+<slide :class="size-70">
+### 数据海报展示
+
+:::gallery
+
+![](https://source.unsplash.com/uPGOEbjbVGA/800x600)
+
+## Alicia Jiménez
+
+Founder & CEO
+
+---
+
+![](https://source.unsplash.com/6anudmpILw4/800x600)
+
+## Sam Trololovitz
+
+Master of nothing
+
+---
+
+![](https://source.unsplash.com/IFxjDdqK_0U/800x600)
+
+## Erin Gustafson
+
+VP of Design
+
+:::
+
 <slide :class="size-80">
-## 目录
+
+### **贰`:`与岗位相关的周边能力和素质**
 
 ---
 :::steps
 
-:~fa-file~:
-## contents
+## 一`:`计算机能力
 
-When you're really passionate about your job, you can change the world.
+视频剪辑：帮助市场中心及公司解决视频相关需求
 
----
+海报设计：五楼大厅展屏数据海报设计、商务宣传资料的设计制作
 
-## 一 工作总结
-
-1. Architecture{.animated.fadeInRight.delay-500}
-2. Design
-3. Development
-{.build.moveIn}
+Office：浙江省二级
 
 ---
 
-## 二 自我评价
+## 二`:`系统搭建经验
 
-1. Architecture{.bounce}
-2. Design{.swing}
-3. Development{.flash}
-{.text-cols.build}
+- 参与过CRM和Salesforce系统转换的需求解决方案和流程管理设计
 
 ---
 
-## 三 未来规划与展望
+## 三`:`沟通协调
 
-1. Architecture
-2. Design
-3. Development
+具备横向与公司内部沟通和纵向解决客户需求能力
 
-<slide class="bg-black-blue aligncenter" image="https://source.unsplash.com/C1HhAQrbykQ/">
+---
+
+## 四`:`组织策划
+
+大型活动的组织策划（晚会流程设计、节目筛选、催场、现场音视频、灯光控制等）、摄影摄像、预算控制
+
+<slide :class="size-60">
+
+### 叁`:`工作质量和成效
+
+---
+
+:::shadowbox
+
+## 9月
+
+入职一周完成当月月报制作，信息化学习蜂鸟系统数据抓取相关工作，可以独立运用SQL读取需求数据，客户档案模板建立、绩效考核细则、
+霸王币优化、转正答辩评分表等设计完成
+
+---
+
+## 10月
+
+月报完成，市场中心完整制度撰写完成，参与央视财经对强哥的采访并整理话术，后期给销售进行培训，准确率计算方式确定并及时更新数据，完成五楼大屏10月数据海报设计，初步构思CRM系统需求并整理，市场中心组织架构规划汇总，协助左总处理临时事宜
+
+:::
+
+<slide :class="size-80">
+
+:::card
+
+### 肆`:`未来工作规划展望
+ 
+* :短期三个月\::{.text-label} CRM上线，制度落实
+* :中期一年\::{.text-label}各方面能力提升一个阶级，尤其是管理能力
+* :长期\::{.text-label} 团队管理
+{.description}
+
+---
+![](https://source.unsplash.com/rCOWMC8qf8A/)
+
+:::
+
+<slide :class="size-70">
+
+### 伍`:`价值观及对他人的正面影响 {.aligncenter}
+
+:::card {.quote}
+
+
+![](https://webslides.tv/static/images/davinci.png)
+
+---
+> “付出和回报是成正比的，不做一味多余的付出，也不错过任何一个可以努力的机会
+      影响：输出产品质量要求较高、从零开始、工作习惯”
+> ==张晓红==
+
+
+<slide class="frame" :class="size-60 bg-white tobuild bounce">
+
+### :fa-info-circle large: 陆`:`对公司/工作的思考及改善建议
+
+**入职以来充分感受到企业文化，轻松和谐的工作氛围，流程节点上可以多加完善**
+
 
 
 <slide :class="size-60">
